@@ -2,7 +2,7 @@
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{cv}[16/12/14 CV class]
+\ProvidesClass{cv}[29/11/19 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -46,7 +46,7 @@
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
 \begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-Last Updated \today % Last Updated text
+Last Updated March 2020 % Last Updated text
 \end{textblock}}
 
 %----------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@ Last Updated \today % Last Updated text
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
-\vspace{-25pt} % Reduce whitespace after the rule slightly
+\vspace{-5pt} % Reduce whitespace after the rule slightly
 }
 
 %----------------------------------------------------------------------------------------
@@ -98,5 +98,5 @@ Last Updated \today % Last Updated text
 %----------------------------------------------------------------------------------------
 
 \newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
-{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+{\vspace{-\topsep} \begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}

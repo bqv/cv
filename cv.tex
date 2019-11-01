@@ -1,8 +1,6 @@
+\documentclass[a4paper]{cv}
 
-%!TEX TS-program = lualatex
-%!TEX encoding = UTF-8 Unicode
-
-\documentclass[11pt, a4paper]{cv}
+\usepackage{embedall}
 
 \usepackage{graphicx}
 
@@ -15,8 +13,8 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Tony}{Olagbaiye}{ % Your name
-\urlstyle{same}\url{http://tonyolag.co.uk} \\ % Your website, LinkedIn profile or other web address
-\href{mailto:frony0@gmail.com}{frony0@gmail.com} | 07944 843622 % Your contact information
+\urlstyle{same}\url{https://www.linkedin.com/in/tonyolag/} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:jobs@fron.io}{jobs@fron.io} | \href{tel:+447944843622}{07944 843622} % Your contact information
 }
 \vspace{2em}
 %----------------------------------------------------------------------------------------
@@ -27,10 +25,17 @@
 
 \section{Profile}
 
-\includegraphics[width=0.8\textwidth]{profile.jpg}
+\includegraphics[width=0.8\textwidth]{cv.jpg}
 
-Born: July 1996 \\
-Nationality: Black British
+\begin{minipage}[t]{0.8\textwidth}
+\textbf{Born:} \small July 1996 \\
+\textbf{Nationality:} \small Black British \\
+\textbf{Profile:} \small A Computer Science and Maths enthusiast with experience in a variety of programming languages, platforms and development environments, and a natural passion for developing and applying knowledge.
+\end{minipage}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
 
 \section{Skills}
 
@@ -39,11 +44,11 @@ Nationality: Black British
 \tag{Fluent}
 C \textbullet{} C++ \textbullet{} C\# \textbullet{} Java \textbullet{} Haskell \\
 SQL \textbullet{} Python2 \textbullet{} CSS \textbullet{} Shell \\
-Purescript \textbullet{} Python3 \textbullet{} \LaTeXe\  \\\vspace{4pt}
+Purescript \textbullet{} Python3 \textbullet{} \LaTeX\ \\\vspace{4pt}
 \tag{Competent}
 Rust \textbullet{} Javascript \textbullet{} PHP \textbullet{} Go \\
 Scheme \textbullet{} Clojure \textbullet{} Assembly \\
-{\small HTML5} \textbullet{} OCaml \textbullet{} Typescript\\\vspace{4pt}
+{\small HTML5} \textbullet{} OCaml \textbullet{} Typescript \\\vspace{4pt}
 \tag{Familiar}
 Ruby \textbullet{} CLisp \textbullet{} F\# \\
 Perl \textbullet{} Lua \textbullet{} Ada
@@ -63,11 +68,13 @@ French \textbullet{} Italian \textbullet{} Mandarin \textbullet{} Finnish
 \subsection{Platforms}
 \tag{Fluent}
 Linux (inc. RHEL, Debian) \textbullet{} FreeBSD \\
-NetBSD \textbullet{} POSIX \\\vspace{4pt}
+NetBSD \textbullet{} POSIX \textbullet{} Azure \\\vspace{4pt}
 \tag{Competent}
 Windows \textbullet{} Android \textbullet{} Web \\\vspace{4pt}
 \tag{Familiar}
-OSX \textbullet{} Embedded
+OSX \textbullet{} Embedded \textbullet{} AWS
+
+%----------------------------------------------------------------------------------------
 
 \end{minipage} % The end of the left column
 \hfill
@@ -80,68 +87,83 @@ OSX \textbullet{} Embedded
 
 \section{Biography}
 
-A Computer Science and Maths enthusiast with experience in a variety of programming languages, administration platforms, and development environments, both in industry and as a hobby.
+I have had reasonable experience in the Tech Sector both as a student, in industry and in freelance. As a hobbyist, I am always up to date with the latest tech, conventions, and trends, and even outside quantifiable corporate experience I have years of casual experience with almost all forms of IT, from the theoretical, to the baremetal.
 
 \sectionspace
 
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
 \section{Experience}
 
-\runsubsection{Dulwich College}
-\descript{|\ \ Chairman of the Programming Society}
+\runsubsection{\small Dulwich College}
+\descript{| Chairman of the Programming Society}
 
 \tag{Sept 2013 \textendash{} Jun 2014 | London}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Tasked with running and maintaining DC ProgSoc, including leading weekly sessions teaching aspects of programming for new and experienced students.
+\item\small Tasked with running and maintaining DC ProgSoc, including leading weekly sessions teaching aspects of programming for new and experienced students.
 \end{tightitemize}
 
-\sectionspace
+\sectionspace % Some whitespace after the section
 
 \runsubsection{\small University of York}
-\descript{|\ \ First and Second Year}
+\descript{| First and Second Year}
 
 \tag{Sept 2014 \textendash{} Jun 2016 | York}
 
-\sectionspace
+\sectionspace % Some whitespace after the section
 
 \runsubsection{Thales UK Ltd}
-\descript{|\ \ Software Engineer Intern}
+\descript{| Software Engineer Intern}
 
 \tag{June 2016 \textendash{} Jun 2017 | Manchester}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Took part in day to day running of software projects and meetings, including SCRUM meetings. Worked in Javascript/AngularJS and C++/Boost, using IBM Rhapsody and Rational Clearcase.
+\item\small Took part in day to day running of software projects and meetings, including SCRUM meetings. Worked in Javascript/AngularJS and C++/Boost, using IBM Rhapsody and Rational Clearcase.
 \end{tightitemize}
 
-\sectionspace
+\sectionspace % Some whitespace after the section
 
 \runsubsection{\small University of York}
-\descript{|\ \ Third Year}
+\descript{| Third Year}
 
 \tag{Sept 2017 \textendash{} Jun 2018 | York}
 
-\sectionspace
+\sectionspace % Some whitespace after the section
 
-\runsubsection{\small Mosaic Fulfilment Solutions Ltd}
-\descript{|\ \ Developer}
+\runsubsection{Mosaic Fulfilment Solutions}
+\descript{| Graduate Developer}
 
-\tag{Aug 2018 \textendash{} May 2019 | York}
+\tag{Aug 2018 \textendash{} Jun 2019 | Wetherby}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Took part in daily SCRUM meetings, infrastructure management and administration, full stack development and maintenance of a critical web app suite used internally and sold externally, liaising with clients and internal resources for support queries and specification, full end-to-end development of in-house data operations utilities, and most commonly SQL development and administration from the creation and maintenance of highly volatile databases containing tens of tables with millions of rows, to development of efficient and maintainable procedures and system agent jobs for data manipulation. Worked in Javascript/Typescript/Asp.Net-Core/Linq/SCSS, MS SQL Server 14/17, C\#, using Visual Studio, VSTS/TFS, and SQL Server Management Studio.
+\item\small Took part in daily SCRUM meetings, infrastructure management and administration, full stack development and maintenance of a critical web app suite used internally and sold externally, liaising with clients and internal resources for support queries and specification, full end-to-end development of in-house data operations utilities, and most commonly SQL development and administration from the creation and maintenance of highly volatile databases containing tens of tables with millions of rows, to development of efficient and maintainable procedures and system agent jobs for data manipulation.
+\item\small Worked in Javascript/Typescript/Asp.Net-Core/Linq/SCSS, MS SQL Server 14/17, C\#, using Visual Studio, VSTS/TFS, and SQL Server Management Studio.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+\runsubsection{Answer Digital}
+\descript{| .Net Developer}
+
+\tag{July 2019 \textendash{} March 2020 | Leeds}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item\small Functioning as a mid-tier developer. First project being an NHS team integration in Manchester, colocated 3 days a week. Working on a full stack web app for client internal use with a .Net backend, Aurelia/Typescript frontend, and a combination of SQL and MongoDB for storage (depending on security requirements). Second being a pioneer greenfield project for RPMI, replacing one side of a poor quality project completed by a previous service. The client in this case decided to colocate to us, and this used a .Net backend and JQuery/vanillaJS frontend due to requirements including use of Sitefinity as a CMS. The infrastructure was entirely Microsoft technologies, primarily Azure, and the site security (which was my primary concern) was almost entirely home grown.
+\item\small All projects function using AGILE methodologies as a top tier requirement, with daily scrum meetings, and/or whatever form of kanban is best applicable to the task. Lastly, regularly helped with the Answer Academy to train new recruits.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
 
 \end{minipage} % The end of the right column
 
-\begin{minipage}[t]{0.8\textwidth}
+\begin{minipage}[t]{0.8\textwidth}\centering
 
-\newpage
-
-\vspace{2em}
-
-\center
+%------------------------------------------------
+% Education
+%------------------------------------------------
 
 \section{Education} 
 
@@ -154,7 +176,9 @@ A*, A in Further Maths \\
 B in Physics \\
 C in Chemistry \\\vspace{4pt}
 \tag{GCSE}
-11 GCSEs, 10 A*/A (inc. Maths, English)
+11 GCSEs \\
+of which 10 A*/A \\
+(inc. Maths, English)
 
 \end{minipage}
 %------------------------------------------------
@@ -165,51 +189,45 @@ C in Chemistry \\\vspace{4pt}
 (With a year in industry) \\\vspace{4pt}
 
 \tag{First Year}
-Theory and Practice of Programming, \ 
-Computer Architecture, \ 
-Mathematics of Computer Science, \ 
-Core Algebra \& Calculus \\
-\vspace{0.5em}
+Theory and Practice of Programming,
+Computer Architecture,
+Mathematics of Computer Science,
+Core Algebra \& Calculus \\\vspace{4pt}
+
 \tag{Second Year}
-Vision and Graphics, \ 
-Principles of Programming Languages, \ 
-Computation and Complexity, \ 
-Artificial Intelligence, \ 
-Intro to Number Theory, \ 
-Group Theory, \ 
-Ring Theory, \ 
-Linear Algebra \\
-\vspace{0.5em}
+Vision and Graphics,
+Principles of Programming Languages,
+Computation and Complexity,
+Artificial Intelligence,
+Intro to Number Theory,
+Group Theory,
+Ring Theory,
+Linear Algebra \\\vspace{4pt}
+
 \tag{Third Year}
-Programming Correctness by Construction, \ 
-Neural Computing and Applications, \ 
-Information and Coding Theory, \ 
-Dynamical Systems, \ 
-Metric Spaces, \ 
-Algebraic Number Theory, \ 
-Cryptography, \ 
-Topology, \ 
-Galois Theory \\
+Programming Correctness by Construction,
+Neural Computing and Applications,
+Information and Coding Theory,
+Dynamical Systems,
+Metric Spaces,
+Algebraic Number Theory,
+Cryptography,
+Topology,
+Galois Theory
 
 \end{minipage}
 
-\section{Contact Addresses} 
-
-\center\textbf{Home Address} \\
-%\tagi{01/07/15 \textendash{} 22/07/15} \\
-\sectionspace
-19 Hadrian Avenue \\
-Heslington \\
-York \\
-YO10 3RD
-
 \sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Achievements
+%------------------------------------------------
 
 \section{Achievements} 
 
 \begin{tabular}{rll}
 2016 & Enlisted & Google Get Ahead Scheme \\
-2014	 & 1\textsuperscript{st} Round & UoY RasPi Challenge\\
+2014 & 1\textsuperscript{st} Round & UoY Raspberry Pi Challenge \\
 2013 & Participation & British Informatics Olympiad \\
 2013 & Silver Award & Senior Mathematics Challenge \\
 2012 & 2\textsuperscript{nd} Round & Intermediate Mathematics Challenge \\
@@ -217,44 +235,46 @@ YO10 3RD
 
 \sectionspace % Some whitespace after the section
 
-\section{Links} 
+%------------------------------------------------
+% Links
+%------------------------------------------------
 
-\faGithub{} Github:// \href{https://github.com/bqv}{\bf bqv} \\
-\faLinkedin{} LinkedIn:// \href{https://www.linkedin.com/in/tonyolag}{\bf tonyolag} \\
-\faGooglePlus{} Google:// \href{https://plus.google.com/+TonyOlagbaiye}{\bf +TonyOlagbaiye}
+%\section{Links} 
 
-\sectionspace % Some whitespace after the section
+%\faGithub{} Github:// \href{https://github.com/frony0}{\bf frony0} \\
+%\faLinkedin{} LinkedIn:// \href{https://www.linkedin.com/in/tonyolag}{\bf tonyolag} \\
+%\faGooglePlus{} Google:// \href{https://plus.google.com/+TonyOlagbaiye}{\bf +TonyOlagbaiye}
+%\scriptsize\flushright: wq
+
+%----------------------------------------------------------------------------------------
 
 \section{References}
 
-\begin{minipage}[t]{0.49\textwidth}
+\begin{minipage}[t]{0.4\textwidth}
 \textbf{Edward Phillips} \\
 \textit{Mosaic Manager} \\
-\\
 York House \\
 Wetherby Road \\
-York, 
-YO26 7NH \\
+York, YO26 7NH \\
 01904 202 140 \\
 \href{mailto:edward.phillips@mosaic-fs.co.uk}{edward.phillips@mosaic-fs.co.uk}
 \end{minipage}
-\begin{minipage}[t]{0.49\textwidth}
-\textbf{Robert Wilson} \\
-\textit{Thales Manager} \\
-\\
-Dolphin House \\
-Ashurst Drive \\
-Stockport, 
-SK3 0XB \\
-0161 741 3268 \\
-\href{mailto:robert.wilson@uk.thalesgroup.com}{robert.wilson@uk.thalesgroup.com}
+\begin{minipage}[t]{0.4\textwidth}
+\textbf{Emma Andrews} \\
+\textit{Answer Digital People Coordinator} \\
+Union Mills \\
+9 Dewsbury Road \\
+Leeds, LS11 5DD \\
+0113 201 0600 \\
+\href{mailto:emma.andrews@answerdigital.co.uk}{emma.andrews@answerdigital.co.uk}
 \end{minipage}
 
-\end{minipage}
+\sectionspace % Some whitespace after the section
 
 \vfill
 
 {\center{\small Typeset in Lua\LaTeX}}
-\scriptsize\flushright: wq
+
+\end{minipage}
 
 \end{document}
