@@ -46,7 +46,7 @@
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
 \begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-Last Updated March 2020 % Last Updated text
+Last Updated January 2022 % Last Updated text
 \end{textblock}}
 
 %----------------------------------------------------------------------------------------
